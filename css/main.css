@@ -238,10 +238,9 @@ a {
     z-index: 999; }
   .content-chart .fa-arrow-left {
     display: none; }
-  .content-chart .lineChart {
+  .content-chart #chart_div {
     background-color: #EEE;
     margin: 0 1em 0 0;
-    padding-left: 1em;
     height: calc(100vh) !important; }
 
 .nav-view {
