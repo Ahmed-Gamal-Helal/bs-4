@@ -4,17 +4,19 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Module Bs-4</title>
+        <title>Restaurant</title>
         <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
+	    <link rel="shortcut icon" href="login.png" />
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/jquery.dataTables.min.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <!-- Start Right Side Dashboard -->
-        <section class="hidden-xs-up col-xs-hidden">
+
+        <!-- Start Left Side Dashboard -->
+        <section class="d-none d-md-block">
             <aside class="text-center"> 
                 <div><a href="#"><span><i class="fa fa-home fa-lg" aria-hidden="true"></i></span></a></div>
                 <div><a href="#"><span><i class="fa fa-archive fa-lg" aria-hidden="true"></i></span></a></div>
@@ -27,216 +29,229 @@
                 <div><a href="#"><span><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></span></a></div>
                 <div><a href="#"><span><i class="fa fa-bell fa-lg" aria-hidden="true"></i></span></a></div>
             </aside>
-        </section>
-        <!-- End Right Side Dashboard -->
+        </section>  
+        <!-- End Left Side Dashboard -->
 
-        <!-- START NAVBAR -->
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container">
-                <a class="navbar-brand ml-auto" href="#">
-                    المستودع الإلكترونى
-                </a>
-                 <!-- <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <span><a class="nav-link" href="#"><i class="fa fa-bell fa-md"></i>
-                        </a></span>
-                        
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#"><i class="fa fa-user fa-md"></i></a>
-                    </li>
-                </ul>  -->
-            </div> 
-        </nav>
+        <!-- Start NAVBAR -->
+        <div class="upper-bar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col elec-store">
+                        <a href="#">
+                            <span>المستودع</span><span> الالكترونى</span>
+                        </a>
+                    </div>
+                    <div class="col nots-side">
+                        <ul>
+                            <li>
+                                <a class="nav-link" href="#"><i class="fa fa-language"></i></a>
+                            </li>
+                            <li>
+                                <a class="nav-link active" href="#"><i class="fa fa-bell"></i></a>
+                            </li>
+                            
+                            <li>
+                                <a class="nav-link" href="#"><i class="fa fa-user"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- END NAVBAR -->
 
         <!-- Start Control Pannel -->
-        <div class="control-pannel container">
-            <h2>لوحة التحكم</h2>
+        <div class="lower-bar">
+            <div class="container-fluid">
+                <div class="row" style="margin: 0 8% .5em 0;">
+                    <div class="control-pannel">
+                        <h2>لوحة التحكم</h2>
+                    </div>
+                </div>
+            </div>
+            <hr>
         </div>
-        <hr>
         <!-- End Control Panel -->
 
         <!-- Start Content Rows -->
         <div class="sample">
-        <div class="row">
-            <div class="col-lg-6 main-col ">
-                <div class="container-fluid text-center text-align-left">
-                    <div class="row justify-text-center">
-                        <a href="#" class="col-sm-3 suppliers">
-                            <span><i class="fa fa-archive fa-2x" aria-hidden="true"></i></span>
-                            <h5 id="x">الموردين</h5>
-                        </a>
-                        <a href="#" class="col-sm-3 clients">
-                            <span><i class="fa fa-address-book fa-2x" aria-hidden="true"></i></span>
-                            <h5>العملاء</h5>
-                        </a>
-                        <a href="#" class="col-sm-3 stores">
-                            <span><i class="fa fa-institution fa-2x" aria-hidden="true"></i></span>
-                            <h5>المستودع</h5>
-                        </a>
-                    </div>
-                    <div class="row">
-                        <a href="#" class="col-sm-3 money">
-                            <span><i class="fa fa-money fa-2x" aria-hidden="true"></i></span>
-                            <h5>المصروفات</h5>
-                        </a>
-                        <a href="#" class="col-sm-3 safe">
-                            <span><i class="fa fa-inbox fa-2x" aria-hidden="true"></i></span>
-                            <h5>الخزينه</h5>
-                        </a>
-                        <a href="#" class="col-sm-3 reports">
-                            <span><i class="fa fa-bar-chart fa-2x" aria-hidden="true"></i></span>
-                            <h5>التقارير</h5>
-                        </a>
-                    </div>
-                    <div class="row">
-                        <a href="#" class="col-sm-3 users">
-                            <span><i class="fa fa-users fa-2x" aria-hidden="true"></i></span>
-                            <h5>المستخدمين</h5>
-                        </a>
-                        <a href="#" class="col-sm-3 post">
-                            <span><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></span>
-                            <h5>البريد</h5>
-                        </a>
-                        <a href="#" class="col-sm-3 nots">
-                            <span><i class="fa fa-bell fa-2x" aria-hidden="true"></i></span>
-                            <h5>التنبيهات</h5>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- table -->
-             
-             <!-- <div class="col-lg-3">
-                <div class="container-fluid text-right">
-                    <div class="row">
-                        <div class="card">
-                            <div class="card-header">
-                                <span><i class="fa fa-bar-chart fa-lg"></i></span>
-                                احصائيات عامه / شهرية
-                            </div>
-                            <div class="card-body">
-                                <table class="table">
-                                    <tr>
-                                        <td>عدد الموردين : <span>2</span></td>
-                                        <td>عدد العملاء : <span>1</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>عدد الاصناف : <span>3</span></td>
-                                        <td>مصاريف الشهر : <span>0</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="nowrap">اجمالى المشتريات : <span>0</span></td>
-                                        <td>اجمالى المبيعات : <span>0</span></td>
-                                    </tr>
-                                </table>
-                            </div>
+            <div class="row">
+                <div class="col-lg-9 main-col ">
+                    <div class="container-fluid text-center">
+                        <div class="row no-gutters justify-text-center">
+                            <a href="#" class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="suppliers">
+                                    <span><i class="fa fa-archive fa-2x" aria-hidden="true"></i></span>
+                                    <h5 id="x">الموردين</h5>
+                                </div>
+                            </a>
+                            <a href="#" class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="clients">
+                                    <span><i class="fa fa-address-book fa-2x" aria-hidden="true"></i></span>
+                                    <h5>العملاء</h5>
+                                </div>
+                            </a>
+                            <a href="#" class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="stores">
+                                    <span><i class="fa fa-institution fa-2x" aria-hidden="true"></i></span>
+                                    <h5>المستودع</h5>
+                                </div>
+                            </a>
+                            <a href="#" class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="nots">
+                                    <span><i class="fa fa-bell fa-2x" aria-hidden="true"></i></span>
+                                    <h5>الشكاوى</h5>
+                                </div>
+                            </a>
+                            <a href="#" class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="money">
+                                    <span><i class="fa fa-money fa-2x" aria-hidden="true"></i></span>
+                                    <h5>المصروفات</h5>
+                                </div>
+                            </a>
+                            <a href="#" class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="safe">
+                                    <span><i class="fa fa-inbox fa-2x" aria-hidden="true"></i></span>
+                                    <h5>الخزينه</h5>
+                                </div>
+                            </a>
+                            <a href="#" class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="reports">
+                                    <span><i class="fa fa-bar-chart fa-2x" aria-hidden="true"></i></span>
+                                    <h5>التقارير</h5>
+                                </div>
+                            </a>
+                            <a href="#" class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="nots">
+                                    <span><i class="fa fa-bell fa-2x" aria-hidden="true"></i></span>
+                                    <h5>الإشعارات</h5>
+                                </div>
+                            </a>
+                            <a href="#" class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="users">
+                                    <span><i class="fa fa-users fa-2x" aria-hidden="true"></i></span>
+                                    <h5>المستخدمين</h5>
+                                </div>
+                            </a>
+                            <a href="#" class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="post">
+                                    <span><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></span>
+                                    <h5>البريد</h5>
+                                </div>
+                            </a>
+                            <a href="#" class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="post">
+                                    <span><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></span>
+                                    <h5>البريد</h5>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-                </div>  -->
-             <div class="text-right col-lg-3 left-table">
-                <div class="body">
+        <!-- End Content Rows -->
 
+        <!-- Start Left Table -->
+                <div class="text-right col-lg-3 left-table">
+                    <div class="body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                <th><span><i class="fa fa-align-justify fa-lg"></i></span>
+                                    أوامر سريعه</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="index-3.html">
+                                            <span><i class="fa fa-group fa-lg"></i></span>
+                                            إضافة مورد جديد
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#">                                    
+                                            <span><i class="fa fa-address-book fa-lg"></i></span>
+                                            أضافة عميل جديد
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#">                                    
+                                            <span><i class="fa fa-tag fa-lg"></i></span>
+                                            إضافة صنف جديد للمستودع   
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#">                                    
+                                            <span><i class="fa fa-institution fa-lg"></i></span>
+                                            إضافة معلومات حواله بنكيه 
+                                        </a>  
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#">
+                                            <span><i class="fa fa-gift fa-lg"></i></span>
+                                            فاتورة مشتريات جديده
+                                        </a>  
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#">
+                                            <span><i class="fa fa-shopping-cart fa-lg"></i></span>
+                                            فاتورة مبيعات جديده
+                                        </a>   
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#">
+                                            <span><i class="fa fa-money fa-lg"></i></span>
+                                        إضافة مصروف جديد
+                                        </a>  
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#">
+                                            <span><i class="fa fa-envelope fa-lg"></i></span>
+                                            بريد جديد  
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#">
+                                            <span><i class="fa fa-bar-chart fa-lg"></i></span>
+                                            إضافة موظف جديد 
+                                        </a>  
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-            </div> 
-
-            <div class="text-right col-lg-3 left-table">
-                <div class="body">
-                    <table class="table table-striped text-right">
-                        <thead>
-                            <tr>
-                            <th><span><i class="fa fa-align-justify fa-lg"></i></span>
-                                اوامر سريعه</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <a href="index-3.html">
-                                        <span><i class="fa fa-group fa-lg"></i></span>
-                                        إضافة مورد جديد
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="#">                                    
-                                        <span><i class="fa fa-address-book fa-lg"></i></span>
-                                        إضافة عميل جديد
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="#">                                    
-                                        <span><i class="fa fa-tag fa-lg"></i></span>
-                                        إضافة صنف للمستودع    
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="#">                                    
-                                        <span><i class="fa fa-institution fa-lg"></i></span>
-                                        إضافة بيانات حوالة بنكية  
-                                    </a>  
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="#">
-                                        <span><i class="fa fa-gift fa-lg"></i></span>
-                                        فاتورة مشتريات جديده  
-                                    </a>  
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="#">
-                                        <span><i class="fa fa-shopping-cart fa-lg"></i></span>
-                                        فاتورة مبيعات جديده 
-                                    </a>   
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="#">
-                                        <span><i class="fa fa-money fa-lg"></i></span>
-                                        تسجيل مصروف جديد  
-                                    </a>  
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="#">
-                                        <span><i class="fa fa-envelope fa-lg"></i></span>
-                                        رسالة بريد جديده    
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="#">
-                                        <span><i class="fa fa-bar-chart fa-lg"></i></span>
-                                        اضافة موظف جديد  
-                                    </a>  
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
             </div>
         </div>
+        <!-- End Left Table -->
+            <div class="content-chart">
+                <i  class="fa fa-arrow-right"></i>
+                <i  class="fa fa-arrow-left"></i>
+                <canvas id="lineChart" class="lineChart"></canvas>
+            </div>
 
-        <!-- End Content Rows -->
         <script src="js/jquery-3.2.1.js"></script>
         <script src="js/popper.min.js"></script> 
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.dataTables.min.js"></script>
+        <script src="js/charts.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

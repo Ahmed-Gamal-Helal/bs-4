@@ -1,0 +1,17 @@
+.edit-tab {
+    margin-top: 2%;
+    h2 {
+        font: bold 1rem $baseFont;
+    }
+    form {
+        margin: 1%;
+        .checkbox {
+            label {
+                font: bold .75rem $baseFont;
+                input {
+
+                }
+            }
+        }
+    }
+}

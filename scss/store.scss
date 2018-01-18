@@ -1,27 +1,36 @@
-.col-lg-6 {
+.col-lg-9 {
     .container-fluid {
         .row {
-            .suppliers, .clients, .stores, .money, .safe, .reports {
-            }
-            .col-sm-3 {
-                margin: 1rem;
+            .col-lg-3 {
+                .suppliers, 
+                .clients, 
+                .stores, 
+                .nots, 
+                .money, 
+                .safe, 
+                .reports, 
+                .users, 
+                .post {
+                    margin: 0 1em 1em 1em;
+                    border: 1px solid $gray;
+                    padding: 1.5rem 0;
+                    transition: all .5s ease-in-out;
+                    &:hover {
+                        background-color: $baseColor;
+                        color: $white;
+                        cursor: pointer;
+                        transform: scale(1.1);
+                    }
+                }
             }
             a {
                 text-decoration: none;
                 color: $secColor;
-                transition: all .5s ease-in-out;
-                border: 1px solid $gray;
-                padding: 1.5rem 0;
                 h5 {
                     font: bold 1rem $baseFont;
                 }
-                &:hover {
-                    background-color: $baseColor;
-                    color: $white;
-                    cursor: pointer;
-                }
+
             }
         }
     }
 }
-

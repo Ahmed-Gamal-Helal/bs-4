@@ -1,17 +1,98 @@
+/***** Start Variables********/
+@import 'variables.scss';
+/***** End Variables********/
+
+/***** Start upper-header ********/
+@import 'upper-header.scss';
+/***** End upper-header********/
+
+/***** Start control********/
+@import 'control.scss';
+/***** End control********/
+
+/***** Start aside ********/
+@import 'aside.scss';
+/***** End aside********/
+
+/***** Start store ********/
+@import 'store.scss';
+/***** End store ********/
+
+/***** Start stastics********/
+@import 'stastics.scss';
+/***** End stastics********/
+
+/***** Start tables ********/
+@import 'tables.scss';
+/***** End tables ********/
+
+/***** Start left-table ********/
+@import 'left-table.scss';
+/***** End left-table ********/
+
+/***** Start form********/
+@import 'form.scss';
+/***** End form********/
+
+/****** Global Touches ********/
 *, img {
     max-width: 100%;
 }
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
 .sample {
-    margin-right: 5.5%;
+    margin-right: 4.5%;
     margin-top: 1%;
 }
+ul {
+    list-style: none;
+}
+a {
+    cursor: pointer;
+    &:hover {
+        text-decoration: none;
+    }
+}
 
-@import 'variables.scss';
-@import 'upper-header.scss';
-@import 'control.scss';
-@import 'aside.scss';
-@import 'store.scss';
-@import 'stastics.scss';
-@import 'tables.scss';
-@import 'left-table.scss';
-@import 'form.scss';
+
+.content-chart {
+    position:fixed;
+    left: 0;
+    // right: 100%;
+    top: 0;
+    width: 67em !important;
+    transform: translateX(-99%);
+    transition: all 2s ease-in-out; 
+    .fa-arrow-right, 
+    .fa-arrow-left {
+        position: absolute;
+        left: 100%;
+        bottom: 50%;
+        cursor: pointer;
+        top: 50%;
+        right: 0;
+        color: #7c5c03;
+        margin-left: .5em;
+    }
+    .fa-arrow-right {
+        z-index: 999;
+    }
+    .fa-arrow-left {
+        display: none;
+    }
+    .lineChart {
+        background-color: #EEE;
+        margin: 0 1em 0 0;
+        padding-left: 1em;
+        height: calc(100vh) !important;
+    }
+}
+.nav-view {
+    transform: translateX(0);
+    // width: 67em;
+    // height: 31em;
+}
+
